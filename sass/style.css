@@ -9,12 +9,16 @@
   background-color: #272727;
 }
 
-.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text {
+.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text, .text-tea-products {
   font-family: sans-serif;
 }
 
 .text-font_size, .introduction-text {
   font-size: 19px;
+}
+
+.padding-for-divs, .products-section, .product1-section, .products-pic, .text-box-produtcs {
+  padding: 10px;
 }
 
 .logo_section {
@@ -45,13 +49,11 @@
 .products-section {
   width: 320px;
   height: 340px;
-  padding: 10px;
 }
 
 .product1-section {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 
 .texts-position, .text_box {
@@ -95,4 +97,32 @@
 
 .span-text {
   color: red;
+}
+
+.products-tea {
+  margin-top: 150px;
+}
+
+.products-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.text-box-produtcs {
+  width: 270px;
+}
+
+.text-box-tea, .text-box-produtcs {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.text-tea-products {
+  color: red;
+  font-weight: 300;
+  font-size: 20px;
 }

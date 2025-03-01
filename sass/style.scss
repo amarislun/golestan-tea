@@ -17,6 +17,15 @@
     font-size: 19px;
 }
 
+.padding-for-divs {
+    padding: 10px;
+}
+
+@mixin color-p {
+    color: red;
+    font-weight: 300;
+}
+
 @mixin icons_color {
     color: #afb2b4;
 }
@@ -51,13 +60,13 @@
     @extend .bg_products;
     width: 320px;
     height: 340px;
-    padding: 10px;
+    @extend .padding-for-divs;
 }
 
 .product1-section {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    @extend .padding-for-divs;
 }
 
 .text_box {
@@ -124,4 +133,39 @@
 
 .span-text {
     @include span;
+}
+
+.products-tea {
+    margin-top: 150px;
+}
+
+@mixin tea-pics {
+    display: flex;
+    justify-content: center;
+}
+
+.products-pic {
+    @include tea-pics;
+    @extend .padding-for-divs;
+}
+
+.text-box-produtcs {
+    @extend .padding-for-divs;
+    @extend .text-box-tea;
+    width: 270px;
+}
+
+.text-box-tea {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.text-tea-products {
+    @include color-p;
+    font-size: 20px;
+    @extend .font_family;
 }
