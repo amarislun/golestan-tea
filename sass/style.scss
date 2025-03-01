@@ -2,10 +2,19 @@
     padding: 0;
     margin: 0;
     border: 0;
+    overflow-x: hidden;
 }
 
 .bg-color {
     background-color: #272727;
+}
+
+.font_family {
+    font-family: sans-serif;
+}
+
+.text-font_size {
+    font-size: 19px;
 }
 
 @mixin icons_color {
@@ -49,4 +58,70 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+
+.text_box {
+    @extend .heading-text;
+    @extend .paragraphs-text;
+    @extend .texts-position;
+}
+
+.texts-position {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+
+.heading-text {
+    @extend .font_family;
+    font-size: 25px;
+    color: red;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.paragraphs-text {
+    @extend .font_family;
+    font-size: 20px;
+    color: #94979A;
+    font-weight: 300;
+}
+
+@mixin heading-texts {
+    color: red;
+    font-size: 22px;
+    font-weight: 200;
+    @extend .font_family;
+}
+
+.introduction-heading {
+    @include heading-texts;
+    margin-top: 30px;
+}
+
+@mixin paragraphs-texts {
+    @extend .text-font_size;
+    line-height: 34px;
+    color: #94979A;
+    font-weight: 200;
+    text-align: justify
+}
+
+.introduction-text {
+    @include paragraphs-texts;
+    @extend .font_family;
+    margin-top: 15px;
+}
+
+.introduction-text-box {
+    margin: 0px  15px;
+    padding: 10px;
+}
+
+@mixin span {
+   color: red; 
+}
+
+.span-text {
+    @include span;
 }

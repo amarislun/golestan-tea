@@ -2,10 +2,19 @@
   padding: 0;
   margin: 0;
   border: 0;
+  overflow-x: hidden;
 }
 
 .bg-color, .logo_section, .offcanvas_part {
   background-color: #272727;
+}
+
+.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text {
+  font-family: sans-serif;
+}
+
+.text-font_size, .introduction-text {
+  font-size: 19px;
 }
 
 .logo_section {
@@ -43,4 +52,47 @@
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+
+.texts-position, .text_box {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+}
+
+.heading-text, .text_box {
+  font-size: 25px;
+  color: red;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.paragraphs-text, .text_box {
+  font-size: 20px;
+  color: #94979A;
+  font-weight: 300;
+}
+
+.introduction-heading {
+  color: red;
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+.introduction-text {
+  line-height: 34px;
+  color: #94979A;
+  font-weight: 200;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.introduction-text-box {
+  margin: 0px  15px;
+  padding: 10px;
+}
+
+.span-text {
+  color: red;
 }
