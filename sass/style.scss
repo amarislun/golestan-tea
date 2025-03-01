@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.bg-color {
+    background-color: #272727;
+}
+
+@mixin icons_color {
+    color: #afb2b4;
+}
+
+.logo_section {
+    display: flex;
+    justify-content: center;
+    @extend .bg-color;
+}
+
+.golestan_logo {
+    width: 143px;
+    padding: 5px 0px;
+}
+
+.offcanvas_part {
+    @extend .bg-color;
+    .icons {
+        @include icons_color();
+        padding: 8px;
+    }
+    display: flex;
+    justify-content: end;
+    padding: 45px 7.5px 15px 0px;
+}
+
+.bg_products {
+    background-image: linear-gradient(#f8f8f8,#d9d9d9);
+}
+
+.products-section {
+    @extend .bg_products;
+    width: 320px;
+    height: 340px;
+    padding: 10px;
+}
+
+.product1-section {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
