@@ -9,15 +9,15 @@
   background-color: #272727;
 }
 
-.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text, .text-tea-products {
+.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text, .text-tea-products, .net-weight, .weight-text {
   font-family: sans-serif;
 }
 
-.text-font_size, .introduction-text {
+.text-font_size, .introduction-text, .weight-text {
   font-size: 19px;
 }
 
-.padding-for-divs, .products-section, .product1-section, .products-pic, .text-box-produtcs {
+.padding-for-divs, .products-section, .product1-section, .products-pic, .text-box-produtcs, .weight-box {
   padding: 10px;
 }
 
@@ -114,7 +114,6 @@
 
 .text-box-tea, .text-box-produtcs {
   display: flex;
-  align-content: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
@@ -125,4 +124,38 @@
   color: red;
   font-weight: 300;
   font-size: 20px;
+}
+
+.weight-text-box {
+  margin-top: 19px;
+}
+
+.net-weight-text, .net-weight {
+  color: #52575B;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.weight-info {
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.weight-pic {
+  margin-right: 5px;
+}
+
+.weight-text {
+  line-height: 34px;
+  color: #94979A;
+  font-weight: 200;
+  text-align: justify;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0em 1em 0em 1em;
+  }
 }
