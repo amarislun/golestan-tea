@@ -21,8 +21,25 @@
     padding: 10px;
 }
 
-@mixin color-p {
+.mg-top {
+    margin-top: 150px;
+}
+
+.border-bottom {
+   border-bottom: 1px solid #aaaaaa;
+}
+
+@mixin footer-text($font-size , $heading , $text) {
+    #{font-size} : $heading;
+    #{font-size} : $text;
+}
+
+@mixin red-color {
     color: red;
+}
+
+@mixin color-p {
+    @include red-color;
     font-weight: 300;
 }
 
@@ -84,7 +101,7 @@
 .heading-text {
     @extend .font_family;
     font-size: 25px;
-    color: red;
+    @include red-color;
     font-weight: 400;
     padding-bottom: 5px;
 }
@@ -97,7 +114,7 @@
 }
 
 @mixin heading-texts {
-    color: red;
+    @include red-color;
     font-size: 22px;
     font-weight: 200;
     @extend .font_family;
@@ -128,7 +145,7 @@
 }
 
 @mixin span {
-   color: red; 
+   @include red-color; 
 }
 
 .span-text {
@@ -136,7 +153,7 @@
 }
 
 .products-tea {
-    margin-top: 150px;
+    @extend .mg-top;
 }
 
 @mixin tea-pics {
@@ -157,7 +174,7 @@
 .text-box-produtc-3 {
     display: flex;
     @extend .padding-for-divs;
-    border-bottom: 1px solid #aaaaaa;
+    @extend .border-bottom;
 }
 
 .text-3 {
@@ -170,7 +187,7 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    border-bottom: 1px solid #aaaaaa;
+    @extend .border-bottom;
 }
 
 .text-tea-products {
@@ -201,7 +218,7 @@
 .weight-info {
     display: flex;
     justify-content: end;
-    border-bottom: 1px solid #aaaaaa;
+    @extend .border-bottom;
 }
 
 .weight-pic {
@@ -212,6 +229,100 @@
     @include paragraphs-texts;
     font-weight: 300;
     @extend .font_family;
+}
+
+@mixin footer-icons {
+    color: #b9b9b9;
+}
+
+.bg-color-footer {
+    background-color: #eeefef
+}
+
+.footer-section {
+    @include footer-icons;
+    display: flex;
+    justify-content: center;
+    @extend .bg-color-footer;
+    padding: 10px;
+    @extend .mg-top;
+}
+
+.icons-place {
+    padding: 20px;
+}
+
+.red-div {
+    width: 100%;
+    height: 25px;
+    @include red-color;
+}
+
+.footer-section-2 {
+    @extend .bg-color;
+}
+
+.icon1-section {
+    @extend .padding-for-divs;
+    @extend .bg-color;
+}
+
+.icon-1 {
+    @extend .border-bottom;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon1-text-box {
+    @extend .border-bottom;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 21px
+}
+
+.icon1-heading {
+    @include footer-text(15px,16px ,16px);
+    align-self: center;
+    color: #FFFFFF;
+    @extend .font_family;
+    padding: 10px 0px;
+    font-weight: 200;
+}
+
+@mixin a-design-footer {
+    text-decoration: none;
+    color: #BCBEC0;
+    @extend .font_family;
+}
+
+.icon1-list-box {
+    display: flex;
+    justify-content: center;
+}
+
+.icon1-list-box a {
+    @include a-design-footer;
+    @include footer-text(15px,15px ,15px );
+    font-weight: 200;
+}
+
+.footer-text {
+    @extend .bg-color;
+    padding: 60px 10px;
+    text-align: center;
+}
+
+.span-footer {
+    @include footer-text(15px ,15px, 15px);
+    @extend .font_family;
+    color: #9F9F9F;
+    text-align: center;
+}
+
+.span2 {
+    font-size: 14px;
+    color: #7B7B7B;
 }
 
 @media screen and (min-width:320px) and (max-width:767px) {
@@ -341,5 +452,9 @@
         background-image: linear-gradient(180deg, #FBFBFB 0%, #D2D2D2 100%);
         opacity: 1;
         height: 395px;
+    }
+    .footer-section-2 {
+        display: flex;
+        justify-content: space-around;
     }
 }
