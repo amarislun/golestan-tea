@@ -10,8 +10,10 @@
 
 <body>
     <div>
-        <div class="logo_section">
-            <img src="./images/golestan-logo.png" class="golestan_logo" alt="">
+        <div>
+            <div class="logo_section">
+                <img src="./images/golestan-logo.png" class="golestan_logo" alt="">
+            </div>
         </div>
         <div class="offcanvas_part">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -19,23 +21,57 @@
                 <path fill-rule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
+            <div class="navigation">
+                <ul class="navigation-list">
+                    <li class="list-items">
+                        <a class="links-list-items" href="#">Home</a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links-list-items" href="#">About Us</a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links-list-items" href="#">Brands</a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links-list-items" href="#">Products</a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links-list-items" href="#">Contact Us</a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links-list-items" href="#">FA</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- products-section -->
     <div class="products-section">
         <div class="product1-section">
-            <img src="./images/tea-banner-small-en.png" alt="">
-            <div class="text_box">
+            <img src="./images/tea-banner-small-en.png" class="tea-pic" alt="">
+            <img src="./images/tea2-1 (1).png" class="tea-pic-sm" alt="">
+        </div>
+        <div class="text_box">
+            <h2 class="heading-text">Golestan Tea</h2>
+            <p class="paragraphs-text">Fluent in taste</p>
+        </div>
+    </div>
+
+    <div class="banner-sm">
+        <div class="banner-section">
+            <div class="banner-text">
                 <h2 class="heading-text">Golestan Tea</h2>
                 <p class="paragraphs-text">Fluent in taste</p>
             </div>
+            <div class="banner-pic">
+                <img src="./images/tea2-1 (1).png" alt="">
+            </div>
         </div>
     </div>
+    
     <div class="container">
-
-
         <!-- introductions -->
-        <div>
+        <div class="introduction">
             <div class="introduction-text-box">
                 <h2 class="introduction-heading">Introduction</h2>
                 <div class="introduction-text">
@@ -57,15 +93,17 @@
         <!-- product-tea-1 -->
         <div class="products-tea">
             <div class="products-box">
-                <div class="products-pic">
-                    <img src="./images/product-tea-1-1.jpg" alt="">
-                </div>
-                <div class="text-box-produtcs">
-                    <div>
-                        <img src="./images/herbal-icon.png" alt="">
+                <div class="tea-parts-sm">
+                    <div class="products-pic">
+                        <img src="./images/product-tea-1-1.jpg" alt="">
                     </div>
-                    <div class="text-tea-products">
-                        <p>Fragrant Earl Grey Tea</p>
+                    <div class="text-box-produtcs">
+                        <div>
+                            <img src="./images/herbal-icon.png" alt="">
+                        </div>
+                        <div class="text-tea-products">
+                            <p>Fragrant Earl Grey Tea</p>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -84,11 +122,44 @@
                         </div>
                     </div>
                     <div class="weight-text-box">
-                        <p class="weight-text">Golestan Earl Grey tea is a unique blend of imported teas scented with bergamot. The tea suits Iranian palates.
+                        <p class="weight-text">Golestan Earl Grey tea is a unique blend of imported teas scented with
+                            bergamot. The tea suits Iranian palates.
                             <br>
                             Infusion time: 7 to 8 minutes
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-tea-1-sm">
+            <div class="tea-1-pic">
+                <img src="./images/product-tea-1-1.jpg" alt="">
+            </div>
+            <div class="text-box-1">
+                <div class="part1-tea">
+                    <img src="./images/herbal-icon.png" alt="">
+                    <p class="text-tea-products tea-1-text">Fragrant Earl Grey Tea</p>
+                </div>
+                <div class="part2-tea">
+                    <p class="net-weight">Net Weight</p>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/500gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/225gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/100gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="weight-text">Golestan Earl Grey tea is a unique blend of imported teas scented with
+                        bergamot. The tea suits Iranian palates.
+                        <br>
+                        Infusion time: 7 to 8 minutes
+                    </p>
                 </div>
             </div>
         </div>
@@ -123,11 +194,47 @@
                         </div>
                     </div>
                     <div class="weight-text-box">
-                        <p class="weight-text">Our premium Indian tea comes from the finest tea plants grown on the bank of Brahmaputra River in Assam and Darjeeling, India. It possesses the fragrance and flavor of the traditional Indian teas
+                        <p class="weight-text">Our premium Indian tea comes from the finest tea plants grown on the bank
+                            of Brahmaputra River in Assam and Darjeeling, India. It possesses the fragrance and flavor
+                            of the traditional Indian teas
                             <br>
-                            Infusion time: 8 to 12 minutes	
+                            Infusion time: 8 to 12 minutes
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-tea-1-sm">
+            <div class="tea-1-pic">
+                <img src="./images/product-tea-2-1.jpg" alt="">
+            </div>
+            <div class="text-box-1">
+                <div class="part1-tea">
+                    <img src="./images/herbal-icon.png" alt="">
+                    <p class="text-tea-products tea-1-text">Premium Indian Tea</p>
+                </div>
+                <div class="weight-box part2-tea">
+                    <p class="net-weight">Net Weight</p>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/500gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/225gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/100gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="weight-text-box">
+                    <p class="weight-text">Our premium Indian tea comes from the finest tea plants grown on the bank
+                        of Brahmaputra River in Assam and Darjeeling, India. It possesses the fragrance and flavor
+                        of the traditional Indian teas
+                        <br>
+                        Infusion time: 8 to 12 minutes
+                    </p>
                 </div>
             </div>
         </div>
@@ -138,11 +245,11 @@
                 <div class="products-pic">
                     <img src="./images/product-tea-3-1.jpg" alt="">
                 </div>
-                <div class="text-box-produtcs">
+                <div class="text-box-produtc-3">
                     <div>
                         <img src="./images/herbal-icon.png" alt="">
                     </div>
-                    <div class="text-tea-products">
+                    <div class="text-tea-products text-3">
                         <p>Ceylon Gold Tea</p>
                     </div>
                 </div>
@@ -159,14 +266,182 @@
                         </div>
                     </div>
                     <div class="weight-text-box">
-                        <p class="weight-text">Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread across the country’s foothills and fields.
+                        <p class="weight-text">Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan
+                            tea estates which spread across the country’s foothills and fields.
                             <br>
-                            Infusion time: 8 to 7 minutes	
+                            Infusion time: 8 to 7 minutes
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="product-tea-1-sm">
+            <div class="tea-1-pic">
+                <img src="./images/product-tea-3-1.jpg" alt="">
+            </div>
+            <div class="text-box-1">
+                <div class="part1-tea">
+                    <img src="./images/herbal-icon.png" alt="">
+                    <p class="text-tea-products tea-1-text">Ceylon Gold Tea</p>
+                </div>
+                <div class="weight-box part2-tea">
+                    <p class="net-weight">Net Weight</p>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/500gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/100gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="weight-text-box">
+                    <p class="weight-text">Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan
+                        tea estates which spread across the country’s foothills and fields.
+                        <br>
+                        Infusion time: 8 to 7 minutes
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- products-tea-4 -->
+        <div class="products-tea">
+            <div class="products-box">
+                <div class="products-pic">
+                    <img src="./images/product-tea-4-1.jpg" alt="">
+                </div>
+                <div class="text-box-produtc-3">
+                    <div>
+                        <img src="./images/herbal-icon.png" alt="">
+                    </div>
+                    <div class="text-tea-products text-3">
+                        <p>Breakfast Tea</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="weight-box">
+                        <p class="net-weight">Net Weight</p>
+                    </div>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/500gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/100gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="weight-text-box">
+                        <p class="weight-text">Being a blend of the best Indian CTC (crush, tear, curl) teas, our
+                            breakfast tea has a natural color and a mellow flavor suitable for breakfast as it infuses
+                            quickly. It is also economical for its superior coloring strength.
+                            <br>
+                            Infusion time: 7 to 8 minutes
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-tea-1-sm">
+            <div class="tea-1-pic">
+                <img src="./images/product-tea-4-1.jpg" alt="">
+            </div>
+            <div class="text-box-1">
+                <div class="part1-tea">
+                    <img src="./images/herbal-icon.png" alt="">
+                    <p class="text-tea-products tea-1-text">Breakfast Tea</p>
+                </div>
+                <div class="weight-box part2-tea">
+                    <p class="net-weight">Net Weight</p>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/500gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/100gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="weight-text-box">
+                    <p class="weight-text">Being a blend of the best Indian CTC (crush, tear, curl) teas, our
+                        breakfast tea has a natural color and a mellow flavor suitable for breakfast as it infuses
+                        quickly. It is also economical for its superior coloring strength.
+                        <br>
+                        Infusion time: 7 to 8 minutes
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- products-tea-5 -->
+        <div class="products-tea">
+            <div class="products-box">
+                <div class="products-pic">
+                    <img src="./images/product-tea-Darjeeling.jpg" alt="">
+                </div>
+                <div class="text-box-produtcs">
+                    <div>
+                        <img src="./images/herbal-icon.png" alt="">
+                    </div>
+                    <div class="text-tea-products">
+                        <p>Darjeeling Premium Tea</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="weight-box">
+                        <p class="net-weight">Net Weight</p>
+                    </div>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/200gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="weight-text-box">
+                        <p class="weight-text">(not available)
+                            <br>
+                            <br>
+                            Darjeeling tea is a tea from the Darjeeling district in West Bengal, India.it is the most
+                            valuable tea in the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-tea-1-sm">
+            <div class="tea-1-pic">
+                <img src="./images/product-tea-Darjeeling.jpg" alt="">
+            </div>
+            <div class="text-box-1">
+                <div class="part1-tea">
+                    <img src="./images/herbal-icon.png" alt="">
+                    <p class="text-tea-products tea-1-text">Darjeeling Premium Tea</p>
+                </div>
+                <div class="weight-box part2-tea">
+                    <p class="net-weight">Net Weight</p>
+                    <div class="weight-info">
+                        <div class="weight-pic">
+                            <img src="./images/500gr-icon-2.png" alt="">
+                        </div>
+                        <div class="weight-pic">
+                            <img src="./images/100gr-icon-1-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="weight-text-box">
+                    <p class="weight-text">(not available)
+                        <br>
+                        <br>
+                        Darjeeling tea is a tea from the Darjeeling district in West Bengal, India.it is the most
+                        valuable tea in the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 

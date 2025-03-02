@@ -17,7 +17,7 @@
   font-size: 19px;
 }
 
-.padding-for-divs, .products-section, .product1-section, .products-pic, .text-box-produtcs, .weight-box {
+.padding-for-divs, .products-section, .product1-section, .products-pic, .text-box-produtcs, .text-box-produtc-3, .weight-box {
   padding: 10px;
 }
 
@@ -27,7 +27,6 @@
 }
 
 .golestan_logo {
-  width: 143px;
   padding: 5px 0px;
 }
 
@@ -47,7 +46,7 @@
 }
 
 .products-section {
-  width: 320px;
+  width: 100%;
   height: 340px;
 }
 
@@ -108,8 +107,14 @@
   justify-content: center;
 }
 
-.text-box-produtcs {
-  width: 270px;
+.text-box-produtc-3 {
+  display: flex;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.text-3 {
+  align-self: center;
+  padding-top: 10px;
 }
 
 .text-box-tea, .text-box-produtcs {
@@ -154,8 +159,132 @@
   font-weight: 300;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     padding: 0em 1em 0em 1em;
+  }
+  .offcanvas_part {
+    display: flex;
+  }
+  .navigation-list {
+    display: none;
+  }
+  .product-tea-1-sm {
+    display: none;
+  }
+  .tea-pic-sm {
+    display: none;
+  }
+  .banner-sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0em 1em 0em 1em;
+  }
+  .icons {
+    display: none;
+  }
+  .offcanvas_part {
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+  }
+  .navigation-list {
+    display: flex;
+  }
+  .list-items {
+    padding: 13px 20px;
+  }
+  .links-list-items {
+    text-decoration: none;
+    color: #AFB2B4;
+    font-family: sans-serif;
+  }
+  .tea-parts-sm {
+    display: flex;
+    justify-content: center;
+  }
+  .text-box-produtcs {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+  }
+  .products-tea {
+    display: none;
+  }
+  .product-tea-1-sm {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  .tea-1-pic {
+    padding: 10px;
+  }
+  .text-box-1 {
+    width: 466px;
+    padding: 10px;
+  }
+  .part1-tea {
+    display: flex;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 10px;
+  }
+  .text-tea-products {
+    align-self: center;
+  }
+  .part2-tea {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 10px;
+  }
+  .tea-1-text {
+    align-self: center;
+    padding-top: 25px;
+  }
+  .weight-info {
+    border: 0;
+  }
+  .tea-pic {
+    display: none;
+  }
+  .product1-section {
+    justify-content: end;
+    margin: 0px 40px;
+  }
+  .heading-text, .text_box {
+    font-size: 55px;
+  }
+  .text_box {
+    top: 45%;
+  }
+  .introduction {
+    display: flex;
+    justify-content: center;
+  }
+  .introduction-text-box {
+    width: 700px;
+  }
+  .banner-section {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-pic {
+    padding: 10px;
+  }
+  .banner-text {
+    align-content: center;
+    padding: 10px;
+  }
+  .products-section {
+    display: none;
+  }
+  .banner-sm {
+    background-image: linear-gradient(180deg, #FBFBFB 0%, #D2D2D2 100%);
+    opacity: 1;
+    height: 395px;
   }
 }
