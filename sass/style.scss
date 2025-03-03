@@ -106,10 +106,14 @@
     padding-bottom: 5px;
 }
 
+.paragraph-text-color {
+    color: #94979A;
+}
+
 .paragraphs-text {
     @extend .font_family;
     font-size: 20px;
-    color: #94979A;
+    @extend .paragraph-text-color;
     font-weight: 300;
 }
 
@@ -128,7 +132,7 @@
 @mixin paragraphs-texts {
     @extend .text-font_size;
     line-height: 34px;
-    color: #94979A;
+    @extend .paragraph-text-color;
     font-weight: 200;
     text-align: justify;
 }
@@ -255,7 +259,36 @@
 .red-div {
     width: 100%;
     height: 25px;
+    background-color: red;
     @include red-color;
+}
+
+@mixin icons-hover {
+    color: blue;
+}
+
+@mixin transition {
+    transition: all 300ms ease 0s;
+}
+
+.icons-hover-facebook:hover {
+    @include transition;
+    @include icons-hover;
+}
+
+.icons-hover-linkedin:hover {
+    @include transition;
+    color: lightblue;
+}
+
+.icons-hover-instagram:hover {
+    @include transition;
+    color: crimson;
+}
+
+.icons-hover-telegram:hover {
+    @include transition;    
+    @include icons-hover;
 }
 
 .footer-section-2 {
@@ -325,6 +358,44 @@
     color: #7B7B7B;
 }
 
+.links-list-items:hover {
+    @include transition;
+    color: white;
+}
+
+.list-item-position {
+    position: relative;
+}
+
+.about-us-ol {
+    @extend .bg-color;
+    position: absolute;
+    display: none;
+    @include transition;
+    transform: translateY(0);
+}
+
+.about-us-ol li {
+    margin: 20px;
+}
+
+.about-us-link:hover {
+    @include transition;
+    color: white;
+}
+
+.about-us-ol a {
+    text-decoration: none;
+    @extend .paragraph-text-color;
+    @extend .font_family;   
+}
+
+.list-items:hover .about-us-ol {
+    @include transition;   
+    display: block;
+    transform: translateY(5);
+}
+
 @media screen and (min-width:320px) and (max-width:767px) {
     .container {
         padding: 0em 1em 0em 1em;
@@ -363,11 +434,14 @@
     }
     .list-items {
         padding: 13px 20px;
+        align-self: end;
     }
     .links-list-items {
         text-decoration: none;
         color: #AFB2B4;
         font-family: sans-serif;
+        border-right: 1px solid #52575B;
+        padding-right: 5px;
     }
     .tea-parts-sm {
         display: flex;
@@ -397,7 +471,7 @@
         display: flex;
         border-bottom: 1px solid #aaaaaa;
         padding: 10px;
-    }
+    }   
     .text-tea-products {
         align-self: center;
     }
@@ -455,6 +529,12 @@
     }
     .footer-section-2 {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+    }
+    .golestan_logo {
+        display: none;
+    }
+    .golestan_logo-sm {
+        width: 100px;
     }
 }

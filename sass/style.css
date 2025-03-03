@@ -5,11 +5,11 @@
   overflow-x: hidden;
 }
 
-.bg-color, .logo_section, .offcanvas_part, .footer-section-2, .icon1-section, .footer-text {
+.bg-color, .logo_section, .offcanvas_part, .footer-section-2, .icon1-section, .footer-text, .about-us-ol {
   background-color: #272727;
 }
 
-.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text, .text-tea-products, .net-weight, .weight-text, .icon1-heading, .icon1-list-box a, .span-footer {
+.font_family, .heading-text, .text_box, .paragraphs-text, .introduction-heading, .introduction-text, .text-tea-products, .net-weight, .weight-text, .icon1-heading, .icon1-list-box a, .span-footer, .about-us-ol a {
   font-family: sans-serif;
 }
 
@@ -76,9 +76,12 @@
   padding-bottom: 5px;
 }
 
+.paragraph-text-color, .paragraphs-text, .text_box, .introduction-text, .weight-text, .about-us-ol a {
+  color: #94979A;
+}
+
 .paragraphs-text, .text_box {
   font-size: 20px;
-  color: #94979A;
   font-weight: 300;
 }
 
@@ -91,7 +94,6 @@
 
 .introduction-text {
   line-height: 34px;
-  color: #94979A;
   font-weight: 200;
   text-align: justify;
   margin-top: 15px;
@@ -154,7 +156,6 @@
 
 .weight-text {
   line-height: 34px;
-  color: #94979A;
   font-weight: 200;
   text-align: justify;
   font-weight: 300;
@@ -178,7 +179,28 @@
 .red-div {
   width: 100%;
   height: 25px;
+  background-color: red;
   color: red;
+}
+
+.icons-hover-facebook:hover {
+  transition: all 300ms ease 0s;
+  color: blue;
+}
+
+.icons-hover-linkedin:hover {
+  transition: all 300ms ease 0s;
+  color: lightblue;
+}
+
+.icons-hover-instagram:hover {
+  transition: all 300ms ease 0s;
+  color: crimson;
+}
+
+.icons-hover-telegram:hover {
+  transition: all 300ms ease 0s;
+  color: blue;
 }
 
 .icon-1 {
@@ -232,6 +254,41 @@
   color: #7B7B7B;
 }
 
+.links-list-items:hover {
+  transition: all 300ms ease 0s;
+  color: white;
+}
+
+.list-item-position {
+  position: relative;
+}
+
+.about-us-ol {
+  position: absolute;
+  display: none;
+  transition: all 300ms ease 0s;
+  transform: translateY(0);
+}
+
+.about-us-ol li {
+  margin: 20px;
+}
+
+.about-us-link:hover {
+  transition: all 300ms ease 0s;
+  color: white;
+}
+
+.about-us-ol a {
+  text-decoration: none;
+}
+
+.list-items:hover .about-us-ol {
+  transition: all 300ms ease 0s;
+  display: block;
+  transform: translateY(5);
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     padding: 0em 1em 0em 1em;
@@ -270,11 +327,14 @@
   }
   .list-items {
     padding: 13px 20px;
+    align-self: end;
   }
   .links-list-items {
     text-decoration: none;
     color: #AFB2B4;
     font-family: sans-serif;
+    border-right: 1px solid #52575B;
+    padding-right: 5px;
   }
   .tea-parts-sm {
     display: flex;
@@ -362,6 +422,12 @@
   }
   .footer-section-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .golestan_logo {
+    display: none;
+  }
+  .golestan_logo-sm {
+    width: 100px;
   }
 }
